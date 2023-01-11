@@ -1,5 +1,6 @@
 package hooks;
 import io.cucumber.java.*;
+import utilities.Driver;
 
 
 public class Hooks {
@@ -12,5 +13,6 @@ public class Hooks {
     @After
     public void tearDown()  {
         System.out.println("after methodu çalıştı");
+        Driver.quitDriver();
     }
 }
